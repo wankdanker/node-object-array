@@ -5,7 +5,7 @@ require('./').applyPrototype();
 test('usage', function (t) {
 	var a = {};
 
-	a.push({ a : 'Hello' }, { b : 'World' }, { c : 'Once' });
+	t.equal(a.push({ a : 'Hello' }, { b : 'World' }, { c : 'Once' }), 3);
 	
 	t.equal(a.length(), 3);
 	
