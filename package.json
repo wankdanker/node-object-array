@@ -1,0 +1,36 @@
+{
+  "name": "object-array",
+  "version": "1.0.0",
+  "description": "Add array-like functionality to objects while using unique ids instead of numeric indexes",
+  "main": "index.js",
+  "dependencies": {
+    "node-uuid": "^1.4.7"
+  },
+  "devDependencies": {
+    "tape": "^4.4.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wankdanker/node-object-array"
+  },
+  "keywords": [
+    "object",
+    "push",
+    "pop",
+    "uuid",
+    "array",
+    "map",
+    "filter",
+    "shift",
+    "hash"
+  ],
+  "author": "Dan VerWeire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wankdanker/node-object-array/issues"
+  },
+  "homepage": "https://github.com/wankdanker/node-object-array"
+}
