@@ -26,6 +26,8 @@ ObjectArray.prototype.push = function () {
 	for (var x = 0; x < arguments.length; x++) {
 		this[id()] = arguments[x];
 	}
+	
+	return this.length();
 };
 
 ObjectArray.prototype.pop = function () {
