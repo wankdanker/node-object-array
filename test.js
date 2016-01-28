@@ -16,6 +16,10 @@ test('usage', function (t) {
 	
 	t.deepEqual(a.filter(function (o) { return (typeof o === 'string') }), ['hello', 'there'])
 	
+	t.equal(a.indexOf('not-in-there'), -1);
+	t.equal(a.indexOf('hello'), 3);
+	t.equal(a.indexOf('hello', 4), -1);
+	
 	a.pop();
 	a.pop();
 	
