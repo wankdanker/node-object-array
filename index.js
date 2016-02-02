@@ -23,11 +23,16 @@ function ObjectArray () {
 }
 
 ObjectArray.prototype.push = function () {
+	var ids = [];
+	var i;
+
 	for (var x = 0; x < arguments.length; x++) {
-		this[id()] = arguments[x];
+		i = id();
+		this[i] = arguments[x];
+		ids.push(i);
 	}
 	
-	return this.length();
+	return ids;
 };
 
 ObjectArray.prototype.pop = function () {

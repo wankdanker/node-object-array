@@ -67,6 +67,7 @@ arrayish function status
 * map() ✔
 * pop() ✔
 * push() ✔
+	* returns an array of keys added instead of the total length of the array
 * reduce()
 * reduceRight()
 * reverse()

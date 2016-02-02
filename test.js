@@ -5,7 +5,7 @@ require('./').applyPrototype();
 test('usage', function (t) {
 	var a = {};
 
-	t.equal(a.push({ a : 'Hello' }, { b : 'World' }, { c : 'Once' }), 3);
+	t.deepEqual(a.push({ a : 'Hello' }, { b : 'World' }, { c : 'Once' }), [Object.keys(a)[0], Object.keys(a)[1], Object.keys(a)[2]]);
 	
 	t.equal(a.length(), 3);
 	
@@ -33,6 +33,7 @@ test('usage', function (t) {
 	
 	t.deepEqual(a.pop(), { c : 'Once' });
 	t.deepEqual(a.shift(), { a : 'Hello' });
-	
+
+
 	t.end();
 });
