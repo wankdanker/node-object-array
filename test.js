@@ -10,7 +10,15 @@ test('usage', function (t) {
 	t.equal(a.length(), 3);
 	
 	t.deepEqual(a.map(function (o) { return o; }), [{ a : 'Hello' }, { b : 'World' }, { c : 'Once' }] );
-	
+
+	var b = [];
+
+	a.forEach(function (el, ix, obj) {
+		b.push(el);
+	});
+
+	t.deepEqual(b, [{ a : 'Hello' }, { b : 'World' }, { c : 'Once' }]);
+
 	a.push('hello');
 	a.push('there');
 	

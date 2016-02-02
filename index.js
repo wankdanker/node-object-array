@@ -78,6 +78,17 @@ ObjectArray.prototype.filter = function (fn) {
 	return result;
 };
 
+ObjectArray.prototype.forEach = function (fn) {
+	var self = this;
+	var ks = keys(self);
+	
+	ks.forEach(function (k) {
+		var o = self[k];
+		
+		fn(o, k, self);
+	});
+};
+
 ObjectArray.prototype.indexOf = function (o, f) {
 	var self = this;
 	var ks = keys(self);

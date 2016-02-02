@@ -58,7 +58,7 @@ arrayish function status
 * concat()
 * every()
 * filter() ✔
-* forEach()
+* forEach() ✔ 
 * indexOf() ✔
 * join()
 * lastIndexOf()
