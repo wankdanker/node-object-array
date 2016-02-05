@@ -116,6 +116,18 @@ ObjectArray.prototype.length = function () {
 	return keys(this).length;
 };
 
+ObjectArray.prototype.copy = function () {
+	var self = this;
+
+	var copy = new ObjectArray();
+
+	self.forEach(function (obj) {
+		copy.push(obj);
+	});
+
+	return copy;
+}
+
 function id() {
 	return uuid().replace(/-/gi,'');
 }

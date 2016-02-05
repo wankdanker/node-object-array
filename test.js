@@ -34,6 +34,9 @@ test('usage', function (t) {
 	t.deepEqual(a.pop(), { c : 'Once' });
 	t.deepEqual(a.shift(), { a : 'Hello' });
 
+	console.log(a);
+	console.log(a.copy());
+
 
 	t.end();
 });
