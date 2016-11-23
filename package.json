@@ -1,6 +1,6 @@
 {
   "name": "object-array",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Add array-like functionality to objects while using unique ids instead of numeric indexes",
   "main": "index.js",
   "dependencies": {
