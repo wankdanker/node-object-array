@@ -4,7 +4,7 @@
   "description": "Add array-like functionality to objects while using unique ids instead of numeric indexes",
   "main": "index.js",
   "dependencies": {
-    "node-uuid": "^1.4.7"
+    "uuid": "^3.0.0"
   },
   "devDependencies": {
     "tape": "^4.4.0"
